@@ -5,7 +5,9 @@
     </HEAD>
     
     <BODY>
-    <H1>Hello World.</H1>
+        {% for x in data%}
+    <H1>Hello{{ x.address }} at {{ x.name }}.</H1>
+        {% endfor %}
     </BODY>
 </HTML>
 
